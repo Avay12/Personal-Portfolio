@@ -62,9 +62,11 @@ export const projectsData = [
   {
     title: "Wild-Oasis",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "I worked in this Fullstack Project, Wild-oasis which is internal system for booking, reserve and check-in cabin",
     tags: ["React", "Supabase", "Postgres", "Tailwind", "Tanstack-Ouery"],
     imageUrl: wildOasisImg,
+    link: "https://wild-oasis-admin-system.vercel.app",
+    gitHubLink: "https://github.com/Avay12/Wild-Oasis-Admin-System",
   },
 ] as const;
 
