@@ -3,8 +3,10 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import SkillItem from "./skillItem";
 import { useSectionInView } from "@/lib/hook";
+import { useTheme } from "@/context/theme-context";
 export default function Skills() {
   const { ref } = useSectionInView("Skills");
+  const { theme } = useTheme();
   return (
     <section
       id="skills"
@@ -362,7 +364,7 @@ export default function Skills() {
         />
         <SkillItem
           title="NextJs"
-          color="#000"
+          color={theme === "light" ? "#000" : "#090707"}
           icon={
             <svg
               stroke="currentColor"
@@ -382,7 +384,7 @@ export default function Skills() {
         />
         <SkillItem
           title="Git"
-          color="#000"
+          color={theme === "light" ? "#000" : "#ffff"}
           icon={
             <svg
               stroke="currentColor"
@@ -395,7 +397,7 @@ export default function Skills() {
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g fill="#181616">
+              <g fill={theme === "light" ? "#000" : "#030303"}>
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
