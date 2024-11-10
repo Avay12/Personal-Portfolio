@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
@@ -8,9 +9,11 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hook";
 import { useActiveSection } from "@/context/active-section-context";
+
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSection();
+
   return (
     <section
       ref={ref}
@@ -37,8 +40,9 @@ export default function Intro() {
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
+
           <motion.span
-            className="text-4xl absolute right-0 bottom-0"
+            className="absolute bottom-0 right-0 text-4xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -65,7 +69,7 @@ export default function Intro() {
       </motion.h1>
 
       <motion.div
-        className="flex felx-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
