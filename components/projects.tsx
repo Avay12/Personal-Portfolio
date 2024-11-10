@@ -3,7 +3,7 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
 import Project from "./project";
-import { useSectionInView } from "@/context/hook";
+import { useSectionInView } from "@/lib/hook";
 
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.5);

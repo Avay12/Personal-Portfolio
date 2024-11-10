@@ -1,8 +1,8 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import wildOasisImg from "@/public/wild-oasis.png";
+import { SiCsharp } from "react-icons/si";
 
 export const links = [
   {
@@ -53,7 +53,7 @@ export const experiencesData = [
     location: "Kageeshowri, Kathmandu",
     description:
       "I'm now a full-stack developer working in SBRC Info Sys. My stack includes C#, Asp.net core , Angular and Next js. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(SiCsharp),
     date: "2024 May - September",
   },
 ] as const;

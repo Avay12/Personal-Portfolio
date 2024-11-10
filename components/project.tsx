@@ -48,9 +48,20 @@ export default function Project({
               </li>
             ))}
           </ul>
-          <Link href={link} className="sm:mt-2">
-            Link
-          </Link>
+          <div className="flex flex-wrap mt-4 gap-2 sm:gap-2">
+            <Link
+              href={link}
+              className="bg-blue-400 px-3 py-1 tracking-wider rounded-full hover:bg-blue-600  text-white "
+            >
+              Link
+            </Link>
+            <Link
+              href={gitHubLink}
+              className="bg-slate-400 px-3 py-1 tracking-wider rounded-full hover:bg-slate-700  text-white"
+            >
+              GitHub
+            </Link>
+          </div>
         </div>
         <Image
           src={imageUrl}
