@@ -69,24 +69,3 @@ export const projectsData = [
     gitHubLink: "https://github.com/Avay12/Wild-Oasis-Admin-System",
   },
 ] as const;
-
-export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "C#",
-  "TypeScript",
-  "React",
-  ".Net-core",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Docker",
-  "GraphQL",
-  "Reddis",
-  "PostgreSQL",
-  "Framer Motion",
-] as const;
